@@ -50,5 +50,6 @@ def get_dataframe_from_sql(table_name):
 
 
 jobs_DF = prepare_data()
+print(jobs_DF.info())
 upload_dataframe_to_sql(jobs_DF)
 get_dataframe_from_sql('nyc_jobs')
