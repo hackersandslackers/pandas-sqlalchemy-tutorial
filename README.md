@@ -9,7 +9,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/hackersandslackers/pandas-sqlalchemy-tutorial.svg?style=flat-square&colorB=ebcb8b&colorA=4c566a)](https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/hackersandslackers/pandas-sqlalchemy-tutorial.svg?style=flat-square&colorA=4c566a&colorB=ebcb8b)](https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial/network)
 
-![Pandas SQLAlchemy Tutorial](https://storage.googleapis.com/hackersandslackers-cdn/2019/08/pandas-sqlalchemy-databases@2x.jpg)
+![Pandas SQLAlchemy Tutorial](https://res-5.cloudinary.com/hackers/image/upload/q_auto:best/v1/2019/12/pandas-sqlalchemy-databases%402x.jpg)
 
 Easily drop data into Pandas from a SQL database, or upload your DataFrames to a SQL table. Tutorial found here: https://hackersandslackers.com/connecting-pandas-to-a-sql-database-with-sqlalchemy/
 
