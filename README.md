@@ -9,4 +9,30 @@
 [![GitHub Stars](https://img.shields.io/github/stars/hackersandslackers/pandas-sqlalchemy-tutorial.svg?style=flat-square&colorB=ebcb8b&colorA=4c566a)](https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/hackersandslackers/pandas-sqlalchemy-tutorial.svg?style=flat-square&colorA=4c566a&colorB=ebcb8b)](https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial/network)
 
-Source code for the accompanying tutorial.
+![Pandas SQLAlchemy Tutorial](https://storage.googleapis.com/hackersandslackers-cdn/2019/08/pandas-sqlalchemy-databases@2x.jpg)
+
+Easily drop data into Pandas from a SQL database, or upload your DataFrames to a SQL table. Tutorial found here: https://hackersandslackers.com/connecting-pandas-to-a-sql-database-with-sqlalchemy/
+
+## Getting Started
+
+Installation is recommended with Pipenv:
+
+```shell
+$ git clone https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial.git
+$ cd pandas-sqlalchemy-tutorial
+$ pipenv shell
+$ pipenv update
+$ python3 main.py
+```
+
+Alternatively, try installing via `setup.py`:
+
+```shell
+$ git clone https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial.git
+$ cd pandas-sqlalchemy-tutorial
+$ python3 setup.py install
+$ python3 main.py
+```
+-----
+
+**Hackers and Slackers** tutorials are free of charge. If you found this tutorial helpful, a [small donation](https://www.buymeacoffee.com/hackersslackers) would be greatly appreciated to keep us in business. All proceeds go towards coffee, and all coffee goes towards more content.
