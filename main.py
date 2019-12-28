@@ -1,3 +1,4 @@
+"""Main script."""
 from os import environ
 from sqlalchemy import create_engine
 from sqlalchemy.types import Integer, Text, String, DateTime
