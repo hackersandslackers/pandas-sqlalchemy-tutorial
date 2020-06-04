@@ -13,9 +13,9 @@
 
 Easily drop data into Pandas from a SQL database, or upload your DataFrames to a SQL table. Tutorial found here: https://hackersandslackers.com/connecting-pandas-to-a-sql-database-with-sqlalchemy/
 
-## Getting Started
+## Installation
 
-Installation is recommended with Pipenv:
+**Installation via [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/)**:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial.git
@@ -25,12 +25,14 @@ $ pipenv update
 $ python3 main.py
 ```
 
-Alternatively, try installing via `setup.py`:
+**Installation via `requirements.txt`**:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial.git
 $ cd pandas-sqlalchemy-tutorial
-$ python3 setup.py install
+$ python3 -m venv myenv
+$ source myenv/bin/activate
+$ pip3 install -r requirements.txt
 $ python3 main.py
 ```
 -----
