@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "Pandas SQLAlchemy Tutorial"
+version = "0.1.0"
+description = "Easily drop data into Pandas from a SQL database or upload DataFrames to a SQL table."
+authors = ["Todd Birchard <toddbirchard@gmail.com>"]
+maintainers = ["Todd Birchard <toddbirchard@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://hackersandslackers.com/connecting-pandas-to-a-sql-database-with-sqlalchemy/"
+repository = "https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial/"
+documentation = "https://hackersandslackers.com/connecting-pandas-to-a-sql-database-with-sqlalchemy/"
+keywords = ["Python",
+            "Pandas",
+            "SQLAlchemy",
+            "Data Science",
+            "Data Analysis"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "*"
+sqllchemy = "*"
+pymysql = "*"
+python-dotenv = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+mock = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+run = "main:script"
+
+[tool.poetry.urls]
+issues = "https://github.com/hackersandslackers/pandas-sqlalchemy-tutorial/issues"

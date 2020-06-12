@@ -8,7 +8,8 @@ verify_ssl = true
 [packages]
 Pandas = "*"
 SQLAlchemy = "*"
-Psycopg2-binary = "*"
+PyMySQL = "*"
+Python-dotenv = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
