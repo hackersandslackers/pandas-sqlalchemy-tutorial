@@ -41,9 +41,10 @@ $ python3 main.py
 
 Replace the values in **.env.example** with your values and rename this file to **.env**:
 
-* `SQLALCHEMY_DATABASE_URI`:Connection URI of a SQL database.
+* `SQLALCHEMY_DATABASE_URI`: Connection URI of a SQL database.
 
-*Remember to never commit secrets saved in .env files to Github.*
+*Remember never to commit secrets saved in .env files to Github.*
+
 ------------------
 
 **Hackers and Slackers** tutorials are free of charge. If you found this tutorial helpful, a [small donation](https://www.buymeacoffee.com/hackersslackers) would be greatly appreciated to keep us in business. All proceeds go towards coffee, and all coffee goes towards more content.
