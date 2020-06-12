@@ -37,7 +37,9 @@ class Database:
                 "posting_updated": DateTime
             }
         )
-        print(f'Loaded {len(csv_df)} rows into {table_name} table.')
+        result = f'Loaded {len(csv_df)} rows INTO {table_name} table.'
+        print(result)
+        return result
 
     def get_dataframe_from_sql(self, table_name):
         """Create DataFrame form SQL table."""
@@ -45,7 +47,6 @@ class Database:
             table_name,
             con=self.engine
         )
-        print(f'Loaded {len(table_df)} rows from {table_name}.')
+        result = f'Loaded {len(table_df)} rows FROM {table_name}.'
         print(table_df.info())
-        return table_df
-
+        return result

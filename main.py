@@ -1,5 +1,5 @@
 """App entry point."""
-from tutorial import init_script
+from pandas_sqlalchemy_tutorial import init_script
 
 script = init_script()
 

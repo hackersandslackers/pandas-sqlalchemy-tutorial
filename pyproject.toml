@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Pandas SQLAlchemy Tutorial"
+name = "pandas_sqlalchemy_tutorial"
 version = "0.1.0"
 description = "Load or insert data into a SQL database using Pandas DataFrames."
 authors = ["Todd Birchard <toddbirchard@gmail.com>"]
@@ -18,7 +18,7 @@ keywords = ["Python",
 [tool.poetry.dependencies]
 python = "^3.8"
 pandas = "*"
-sqllchemy = "*"
+sqlalchemy = "*"
 pymysql = "*"
 python-dotenv = "*"
 
