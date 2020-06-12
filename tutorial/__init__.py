@@ -9,7 +9,8 @@ from config import (
 
 
 def init_script():
+	"""Demonstrate Pandas' SQLAlchemy integration."""
 	jobs_df = load_csv_data(CSV_FILE)
 	db = Database(SQLALCHEMY_DATABASE_URI, SQLALCHEMY_ENGINE_OPTIONS)
-	db.upload_dataframe_to_sql(jobs_df)
+	db.upload_dataframe_to_sql(jobs_df, 'nyc_jobs')
 	db.get_dataframe_from_sql('nyc_jobs')

@@ -5,6 +5,7 @@ import pandas as pd
 
 
 class Database:
+    """Pandas database client."""
 
     def __init__(self, db_uri, db_args):
         self.engine = create_engine(
@@ -13,12 +14,12 @@ class Database:
             echo=True
         )
 
-    def upload_dataframe_to_sql(self, local_df):
+    def upload_dataframe_to_sql(self, csv_df, table_name):
         """Upload data to database with proper dtypes."""
-        local_df.to_sql(
-            "nyc_jobs",
+        csv_df.to_sql(
+            table_name,
             self.engine,
-            if_exists='append',
+            if_exists='replace',
             index=False,
             chunksize=500,
             dtype={
@@ -36,13 +37,15 @@ class Database:
                 "posting_updated": DateTime
             }
         )
+        print(f'Loaded {len(csv_df)} rows into {table_name} table.')
 
     def get_dataframe_from_sql(self, table_name):
         """Create DataFrame form SQL table."""
-        sql_DF = pd.read_sql_table(
+        table_df = pd.read_sql_table(
             table_name,
-            con=self.engine,
-            parse_dates=['posting_date', 'posting_updated']
+            con=self.engine
         )
-        return sql_DF
+        print(f'Loaded {len(table_df)} rows from {table_name}.')
+        print(table_df.info())
+        return table_df
 
